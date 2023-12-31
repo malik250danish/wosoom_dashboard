@@ -57,3 +57,37 @@
     line-height: 20.96px;
     /* 149.714% */
 }
+
+.bgS {
+    background-color: #DFFFEA;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+
+}
+
+.bgD {
+    border-radius: 5px;
+    background: #FFEEF3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+}
+
+.bgW {
+    border-radius: 4.55px;
+    background: #FFF8DD;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+}

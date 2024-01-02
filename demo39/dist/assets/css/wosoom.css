@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .app-header {
-    top: 40px !important;
+    top: 56px !important;
 }
 
 .scrolled {
@@ -1731,4 +1731,27 @@ input[type="file"] {
 
 #btnse {
     cursor: pointer;
+}
+
+.borderRadius5 {
+    border-radius: 5px !important;
+}
+
+.itemBefor2 {
+    position: relative;
+}
+
+.itemBefor2::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #555454;
+    top: 3px;
+    right: -2px;
+}
+
+#kt_app_sidebar {
+    margin-top: 1rem;
 }

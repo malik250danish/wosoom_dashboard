@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic
+Product Version: 8.2.0
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <base href="../" />
+    <title>
+      Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free."
+    />
+    <meta
+      name="keywords"
+      content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template"
+    />
+    <meta property="og:url" content="https://keenthemes.com/metronic" />
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"
+    />
+    <!--end::Fonts-->
+    <!--begin::Vendor Stylesheets(used for this page only)-->
+    <link
+      href="assets/plugins/custom/datatables/datatables.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/plugins/custom/vis-timeline/vis-timeline.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end::Vendor Stylesheets-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/wosoom.css" />
+    <script>
+      // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+:before,:after{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1200px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.v-center{
+	align-items: center;
+}
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+/* header */
+.header{
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	padding:15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+}
+.header .item-left{
+	flex:0 0 17%;
+}
+.header .logo a{
+	font-size: 30px;
+
+	color:#000000;
+	font-weight: 700;
+	text-decoration: none;
+}
+.header .logo a img{
+    width: 100%;
+    height: 30px;
+}
+.header .item-center{
+	flex:0 0 66%;
+}
+.header .item-right{
+	flex:0 0 17%;
+	display: flex;
+	justify-content: flex-end;
+}
+.header .item-right a{ 
+     text-decoration: none;
+     font-size: 16px;
+     color:#555555;
+     display: inline-block;
+     margin-left: 10px;
+     transition: color 0.3s ease;
+}
+.header .menu > ul > li{
+	display: inline-block;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.header .menu > ul > li > a{
+	font-size: 15px;
+	font-weight: 500;
+	color:#000000;
+	position: relative;
+	text-transform: capitalize;
+	transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu{
+	position: absolute;
+	z-index: 500;
+	background-color:#ffffff;
+	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
+	padding: 20px 30px;
+	transition: all 0.5s ease;
+	margin-top:25px;
+	opacity:0;
+	visibility: hidden;
+}
+@media(min-width: 992px){
+.header .menu > ul > li.menu-item-has-children:hover .sub-menu{
+	margin-top: 0;
+	visibility: visible;
+	opacity: 1;
+}
+}
+.header .menu > ul > li .sub-menu > ul > li{
+	line-height: 1;
+}
+.header .menu > ul > li .sub-menu > ul > li > a{
+	display: inline-block;
+	padding: 10px 0;
+	font-size: 15px;
+	color: #555555;
+	transition: color 0.3s ease;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.header .menu > ul > li .single-column-menu{
+	min-width: 280px;
+	max-width: 350px;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li{
+   line-height: 1;
+   display: block; 
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
+	padding:10px 0;
+	display: inline-block;
+	font-size: 15px;
+	color:#555555;
+	transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu.mega-menu{ 
+    left: 50%;
+    transform: translateX(-50%);	
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4{
+  max-width: 100%;
+  width: 100%; 	
+  display: flex;
+  flex-wrap: wrap;
+  padding:20px 0px;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
+  flex:0 0 25%;
+  padding:0 15px;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title{
+	font-size: 16px;
+	color:#ea4636;
+	font-weight: 500;
+	line-height: 1;
+	padding:10px 0;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center .title{
+	text-align: center;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{
+	max-width: 100%;
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a:hover,
+.header .menu > ul > li .sub-menu > ul > li > a:hover,
+.header .item-right a:hover,
+.header .menu > ul > li:hover > a{
+	color:#ea4636;
+    border-bottom:3px solid #0000;
+}
+/* banner section */
+.banner-section{
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  display: block;
+}
+.mobile-menu-head,
+.mobile-menu-trigger{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+
+	.header .item-center{
+		order:3;
+		flex:0 0 100%;
+	}
+	.header .item-left,
+	.header .item-right{
+		flex:0 0 auto;
+	}
+	.v-center{
+		justify-content: space-between;
+	}
+	.header .mobile-menu-trigger{
+		display: flex;
+		height: 30px;
+		width: 30px;
+		margin-left: 15px;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+	}
+	.header .mobile-menu-trigger span{
+		display: block;
+		height: 2px;
+		background-color: #333333;
+		width: 24px;
+		position: relative;
+	}
+	.header .mobile-menu-trigger span:before,
+	.header .mobile-menu-trigger span:after{
+		content: '';
+		position: absolute;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: #333333;
+	}
+	.header .mobile-menu-trigger span:before{
+		top:-6px;
+	}
+	.header .mobile-menu-trigger span:after{
+		top:6px;
+	}
+	.header .item-right{
+		align-items: center;
+	}
+
+	.header .menu{
+		position: fixed;
+		width: 320px;
+		background-color:#ffffff;
+		left:0;
+		top:0;
+		height: 100%;
+		overflow: hidden;
+		transform: translate(-100%);
+		transition: all 0.5s ease;
+		z-index: 1099;
+	}
+	.header .menu.active{
+	   transform: translate(0%);	
+	}
+	.header .menu > ul > li{
+		line-height: 1;
+		margin:0;
+		display: block;
+	}
+	.header .menu > ul > li > a{
+		line-height: 50px;
+		height: 50px;
+		padding:0 50px 0 15px;
+		display: block;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	.header .menu > ul > li > a i{
+		position: absolute;
+		height: 50px;
+		width: 50px;
+		top:0;
+		right: 0;
+		text-align: center;
+		line-height: 50px;
+		transform: rotate(-90deg);
+	}
+	.header .menu .mobile-menu-head{
+		display: flex;
+		height: 50px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 501;
+		position: sticky;
+		background-color: #ffffff;
+		top:0;
+	}
+	.header .menu .mobile-menu-head .go-back{
+		height: 50px;
+		width: 50px;
+		border-right: 1px solid rgba(0,0,0,0.1);
+		cursor: pointer;
+		line-height: 50px;
+		text-align: center;
+		color:#000000;
+		font-size: 16px;
+		display: none;
+	}
+	.header .menu .mobile-menu-head.active .go-back{
+		display: block;
+	}
+	.header .menu .mobile-menu-head .current-menu-title{
+		font-size: 15px;
+		font-weight: 500;
+		color:#000000;
+	}
+	.header .menu .mobile-menu-head .mobile-menu-close{
+	    height: 50px;
+		width: 50px;
+		border-left: 1px solid rgba(0,0,0,0.1);
+		cursor: pointer;
+		line-height: 50px;
+		text-align: center;
+		color:#000000;	
+		font-size: 25px;
+	}
+	.header .menu .menu-main{
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu,
+	.header .menu > ul > li .sub-menu{
+		visibility: visible;
+		opacity: 1;
+		position: absolute;
+		box-shadow: none;
+		margin:0;
+		padding:15px;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		padding-top: 65px;
+		max-width: none;
+		min-width: auto;
+		display: none;
+		transform: translateX(0%);
+		overflow-y: auto;
+	}
+.header .menu > ul > li .sub-menu.active{
+	display: block;
+}
+@keyframes slideLeft{
+	0%{
+		opacity:0;
+		transform: translateX(100%);
+	}
+	100%{
+	    opacity:1;
+		transform: translateX(0%);	
+	}
+}
+@keyframes slideRight{
+	0%{
+		opacity:1;
+		transform: translateX(0%);
+	}
+	100%{
+	    opacity:0;
+		transform: translateX(100%);	
+	}
+}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{
+		margin-top:0;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center .title{
+		margin-bottom: 20px;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center:last-child .title{
+		margin-bottom:0px;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
+		flex: 0 0 100%;
+        padding: 0px;
+	}
+	.header .menu > ul > li .sub-menu > ul > li > a,
+	.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a{
+		display: block;
+	}
+	.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul {
+		margin-bottom: 15px;
+	}
+	.menu-overlay{
+		position: fixed;
+		background-color: rgba(0,0,0,0.5);
+		left:0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		z-index: 1098;
+		visibility: hidden;
+		opacity:0;
+		transition: all 0.5s ease;
+	}
+	.menu-overlay.active{
+	  visibility: visible;
+	  opacity:1;	
+	}
+}
+
+
+
+.subtabsstart {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
+}
+.subtabsstart li  button
+{
+    background-color: transparent !important;
+    /* color: black !important; */
+
+
+    color: rgba(85, 84, 84, 0.74) !important;
+
+text-align: center;
+font-family: Lexend Deca;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+ 
+letter-spacing: 1px;
+text-transform: capitalize;
+}
+
+
+.subtabsstarttosub{
+    width: 250px;
+    text-align: start !important;
+     border-right: 1px solid black;
+}
+.subtabsstarttosub button{
+    background-color:transparent !important;
+    color: black !important;
+    text-align: start;
+    
+    
+}
+.paragrapghoption{
+
+    height: 22px;
+    color: #555454;
+
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Lexend Deca;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.3px;
+text-transform: capitalize;
+}
+.cardsettingstaryt{
+    background: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+}
+    </style>
+  </head>
+  <!--end::Head-->
+  <!--begin::Body-->
+  <body
+    id="kt_app_body"
+    data-kt-app-header-fixed="true"
+    data-kt-app-header-fixed-mobile="true"
+    data-kt-app-sidebar-enabled="true"
+    data-kt-app-sidebar-fixed="true"
+    data-kt-app-sidebar-hoverable="true"
+    data-kt-app-sidebar-push-toolbar="true"
+    data-kt-app-sidebar-push-footer="true"
+    data-kt-app-toolbar-enabled="true"
+    data-kt-app-aside-enabled="true"
+    data-kt-app-aside-fixed="true"
+    data-kt-app-aside-push-toolbar="true"
+    data-kt-app-aside-push-footer="true"
+    class="app-default"
+  >
+    <!--begin::Theme mode setup on page load-->
+    <script>
+      var defaultThemeMode = "light";
+      var themeMode;
+      if (document.documentElement) {
+        if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+          themeMode =
+            document.documentElement.getAttribute("data-bs-theme-mode");
+        } else {
+          if (localStorage.getItem("data-bs-theme") !== null) {
+            themeMode = localStorage.getItem("data-bs-theme");
+          } else {
+            themeMode = defaultThemeMode;
+          }
+        }
+        if (themeMode === "system") {
+          themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        document.documentElement.setAttribute("data-bs-theme", themeMode);
+      }
+    </script>
+ 
+
+
+ <!--#############> Menue Start <########### -->
+   <!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="#"><img src="assets/media/Link.png.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                      
+                        <li class="menu-item-has-children">
+                            <a href="#">Vendors</a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+
+                               <div class="w-100">
+                                <ul class="nav nav-pills mb-3 subtabsstart" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Weddings</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Birthdays</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Corporate</button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
+
+
+
+                                        <div class="d-flex align-items-start">
+                                            <div class="nav flex-column nav-pills subtabsstarttosub me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                                            </div>
+                                            <div class="tab-content" id="v-pills-tabContent" style="width: 75%;">
+                                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <h3>Venues</h3>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-3"> 
+                                                      <p class=" paragrapghoption" >Traditional Venues</p>
+                                                      <p class=" paragrapghoption" >Boutique Style</p>
+                                                      <p class=" paragrapghoption" >Hotels</p>
+                                                      <p class=" paragrapghoption" >Barn & Farm House</p>
+                                                      <p class=" paragrapghoption" >Country Club</p>
+                                                      <p class=" paragrapghoption" >Outdoor venues</p>
+                                                      <p class=" paragrapghoption" >Boutique Style</p>
+                                                      <p class=" paragrapghoption" >Hotels</p>
+                                                      <p class=" paragrapghoption" >Boutique Style</p>
+                                                      <p class=" paragrapghoption" >Licensed Venues</p>
+                                                      <p class=" paragrapghoption" >Outdoor</p>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <p class=" paragrapghoption" >Traditional Venues</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                        <p class=" paragrapghoption" >Hotels</p>
+                                                        <p class=" paragrapghoption" >Country Club</p>
+                                                        <p class=" paragrapghoption" >Outdoor venues</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                        <p class=" paragrapghoption" >Hotels</p>
+                                                        <p class=" paragrapghoption" >Outdoor</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                        <p class=" paragrapghoption" >Licensed Venues</p>
+                                                        <p class=" paragrapghoption" >Barn & Farm House</p>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <p class=" paragrapghoption" >Traditional Event Venues</p>
+                                                        <p class=" paragrapghoption" >Outdoor</p>
+                                                        <p class=" paragrapghoption" >Hotels</p>
+                                                        <p class=" paragrapghoption" >Country Club</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                        <p class=" paragrapghoption" >Hotels</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                        <p class=" paragrapghoption" >Licensed Venues</p>
+                                                        <p class=" paragrapghoption" >Outdoor venues</p>
+                                                        <p class=" paragrapghoption" >Barn & Farm House</p>
+                                                        <p class=" paragrapghoption" >Boutique Style</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="row">
+                                                            <div class="col-md-6"><img src="assets/media/Group.png" alt="" class="w-100"></div>
+                                                            <div class="col-md-6"><img src="assets/media/Rectangle.png" alt="" class="w-100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                                            </div>
+                                          </div>
+                                          
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                                  </div>
+                               </div>
+                                  
+                                <!-- <div class="list-item text-center">
+                                    <a href="#">
+                                    <img src="img/p1.jpg" alt="new Product">
+                                    <h4 class="title">Product 1</h4>
+                                    </a>
+                                </div>
+                                <div class="list-item text-center">
+                                    <a href="#">
+                                    <img src="img/p2.jpg" alt="new Product">
+                                    <h4 class="title">Product 2</h4>
+                                    </a>
+                                </div>
+                                <div class="list-item text-center">
+                                    <a href="#">
+                                    <img src="img/p3.jpg" alt="new Product">
+                                    <h4 class="title">Product 3</h4>
+                                    </a>
+                                </div>
+                                <div class="list-item text-center">
+                                    <a href="#">
+                                    <img src="img/p4.jpg" alt="new Product">
+                                    <h4 class="title">Product 4</h4>
+                                   </a>
+                                </div> -->
+                            </div>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Ideas</a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+
+
+                                <div class="w-100 ">
+                                    <ul class="nav nav-pills mb-3 subtabsstart" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-home-tabsecond" data-bs-toggle="pill" data-bs-target="#pills-homesecond" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Weddings</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-profile-tabsecond" data-bs-toggle="pill" data-bs-target="#pills-profilesecond" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Christening</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-contact-tabsecond" data-bs-toggle="pill" data-bs-target="#pills-contactsecond" type="button" role="tab" aria-controls="pills-contact4second" aria-selected="false">Destination weddings</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content px-5" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-homesecond" role="tabpanel" aria-labelledby="pills-home-tabsecond"> 
+    
+                                            <div class="row mt-3">
+                                                <div class="col-md-2"> 
+                                                  <p class=" paragrapghoption" >Traditional Venues</p>
+                                                  <p class=" paragrapghoption" >Boutique Style</p>
+                                                  <p class=" paragrapghoption" >Hotels</p>
+                                                  <p class=" paragrapghoption" >Barn & Farm House</p>
+                                                  <p class=" paragrapghoption" >Country Club</p>
+                                                  <p class=" paragrapghoption" >Outdoor venues</p>
+                                                  <p class=" paragrapghoption" >Boutique Style</p>
+                                                  <p class=" paragrapghoption" >Hotels</p>
+                                                  <p class=" paragrapghoption" >Boutique Style</p>
+                                                  <p class=" paragrapghoption" >Licensed Venues</p>
+                                                  <p class=" paragrapghoption" >Outdoor</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p class=" paragrapghoption" >Traditional Venues</p>
+                                                    <p class=" paragrapghoption" >Boutique Style</p>
+                                                    <p class=" paragrapghoption" >Hotels</p>
+                                                    <p class=" paragrapghoption" >Country Club</p>
+                                                    <p class=" paragrapghoption" >Outdoor venues</p>
+                                                    <p class=" paragrapghoption" >Boutique Style</p>
+                                                    <p class=" paragrapghoption" >Hotels</p>
+                                                    <p class=" paragrapghoption" >Outdoor</p>
+                                                    <p class=" paragrapghoption" >Boutique Style</p>
+                                                    <p class=" paragrapghoption" >Licensed Venues</p>
+                                                    <p class=" paragrapghoption" >Barn & Farm House</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="cardsettingstaryt">
+<div class="row">
+    <div class="col-md-5">
+        <img src="assets/media/Rectangle2.png" class="w-100" alt="">
+    </div>
+    <div class="col-md-7">
+       <div class="pt-5">
+        <h4>The Prettiest Spring Wedding Colour Ideas</h4>
+
+        <a href="">
+            View Article
+        </a>
+       </div>
+    </div>
+</div>
+                                                    </div>
+
+                                                    <div class="cardsettingstaryt mt-3">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="assets/media/Rectangle2.png" class="w-100" alt="">
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                               <div class="pt-5">
+                                                                <h4>The Prettiest Spring Wedding Colour Ideas</h4>
+                                                        
+                                                                <a href="">
+                                                                    View Article
+                                                                </a>
+                                                               </div>
+                                                            </div>
+                                                        </div>
+                                                                                                            </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6"><img src="assets/media/Group.png" alt="" class="w-100"></div>
+                                                        <div class="col-md-6"><img src="assets/media/Rectangle.png" alt="" class="w-100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+     
+                                              
+    
+    
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profilesecond" role="tabpanel" aria-labelledby="pills-profile-tabsecond">...</div>
+                                        <div class="tab-pane fade" id="pills-contactsecond" role="tabpanel" aria-labelledby="pills-contact-tabsecond">...</div>
+                                      </div>
+                                   </div>
+                              <!-- <div class="list-item">
+                                    <h4 class="title">Men's Fashion</h4>
+                                    <ul>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                    </ul>
+                                    <h4 class="title">Beauty</h4>
+                                    <ul>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Women's Fashion</h4>
+                                  <ul>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                    </ul>
+                                    <h4 class="title">Furniture</h4>
+                                  <ul>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Home, Kitchen</h4>
+                                  <ul>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                         <li><a href="#">Product List</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                   <img src="img/shop1.jpg" alt="shop">
+                              </div> -->
+                            </div>
+                        </li>
+                     
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.498 6.5C11.498 5.17392 10.9713 3.90215 10.0336 2.96447C9.0959 2.02678 7.82413 1.5 6.49805 1.5C5.17196 1.5 3.90019 2.02678 2.96251 2.96447C2.02483 3.90215 1.49805 5.17392 1.49805 6.5C1.49805 7.82608 2.02483 9.09785 2.96251 10.0355C3.90019 10.9732 5.17196 11.5 6.49805 11.5C7.82413 11.5 9.0959 10.9732 10.0336 10.0355C10.9713 9.09785 11.498 7.82608 11.498 6.5ZM10.5324 11.5969C9.42617 12.475 8.02305 13 6.49805 13C2.90742 13 -0.00195312 10.0906 -0.00195312 6.5C-0.00195312 2.90937 2.90742 0 6.49805 0C10.0887 0 12.998 2.90937 12.998 6.5C12.998 8.025 12.473 9.42813 11.5949 10.5344L15.7793 14.7188C16.073 15.0125 16.073 15.4875 15.7793 15.7781C15.4855 16.0688 15.0105 16.0719 14.7199 15.7781L10.5324 11.5969Z" fill="#555454"/>
+                        </svg>
+                        
+                </a>
+                <a href="#"> 
+                    <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.1 3.125C2.24266 3.125 1.55 3.82324 1.55 4.6875V20.3125C1.55 21.1768 2.24266 21.875 3.1 21.875H27.9C28.7573 21.875 29.45 21.1768 29.45 20.3125V4.6875C29.45 3.82324 28.7573 3.125 27.9 3.125H3.1ZM0 4.6875C0 2.96387 1.39016 1.5625 3.1 1.5625H27.9C29.6098 1.5625 31 2.96387 31 4.6875V20.3125C31 22.0361 29.6098 23.4375 27.9 23.4375H3.1C1.39016 23.4375 0 22.0361 0 20.3125V4.6875ZM4.65 7.8125H6.975C8.68484 7.8125 10.075 9.21387 10.075 10.9375C10.075 12.6611 8.68484 14.0625 6.975 14.0625H5.425V16.4062C5.425 16.8359 5.07625 17.1875 4.65 17.1875C4.22375 17.1875 3.875 16.8359 3.875 16.4062V13.2812V8.59375C3.875 8.16406 4.22375 7.8125 4.65 7.8125ZM6.975 12.5C7.83234 12.5 8.525 11.8018 8.525 10.9375C8.525 10.0732 7.83234 9.375 6.975 9.375H5.425V12.5H6.975ZM11.625 8.59375C11.625 8.16406 11.9737 7.8125 12.4 7.8125H14.725C16.4348 7.8125 17.825 9.21387 17.825 10.9375C17.825 12.0703 17.2244 13.0664 16.3283 13.6133L18.0575 15.9375C18.3142 16.2842 18.2464 16.7725 17.9025 17.0312C17.5586 17.29 17.0742 17.2217 16.8175 16.875L14.725 14.0625H13.175V16.4062C13.175 16.8359 12.8263 17.1875 12.4 17.1875C11.9737 17.1875 11.625 16.8359 11.625 16.4062V13.2812V8.59375ZM13.175 12.5H14.725C15.5823 12.5 16.275 11.8018 16.275 10.9375C16.275 10.0732 15.5823 9.375 14.725 9.375H13.175V12.5ZM23.25 7.8125C25.3909 7.8125 27.125 9.56055 27.125 11.7188V13.2812C27.125 15.4395 25.3909 17.1875 23.25 17.1875C21.1091 17.1875 19.375 15.4395 19.375 13.2812V11.7188C19.375 9.56055 21.1091 7.8125 23.25 7.8125ZM20.925 11.7188V13.2812C20.925 14.5752 21.9664 15.625 23.25 15.625C24.5336 15.625 25.575 14.5752 25.575 13.2812V11.7188C25.575 10.4248 24.5336 9.375 23.25 9.375C21.9664 9.375 20.925 10.4248 20.925 11.7188Z" fill="#555454"/>
+                        </svg>
+                        
+                </a>
+                <a href="#"> 
+                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.91071 1.71875C5.6529 1.71875 6.25 2.3248 6.25 3.07812V5.79688C6.25 6.5502 5.6529 7.15625 4.91071 7.15625H2.23214C1.48996 7.15625 0.892857 6.5502 0.892857 5.79688V3.07812C0.892857 2.3248 1.48996 1.71875 2.23214 1.71875H4.91071ZM2.23214 0.8125C0.998884 0.8125 0 1.82637 0 3.07812V5.79688C0 7.04863 0.998884 8.0625 2.23214 8.0625H4.91071C6.14397 8.0625 7.14286 7.04863 7.14286 5.79688V3.07812C7.14286 1.82637 6.14397 0.8125 4.91071 0.8125H2.23214ZM4.91071 10.7812C5.6529 10.7812 6.25 11.3873 6.25 12.1406V14.8594C6.25 15.6127 5.6529 16.2188 4.91071 16.2188H2.23214C1.48996 16.2188 0.892857 15.6127 0.892857 14.8594V12.1406C0.892857 11.3873 1.48996 10.7812 2.23214 10.7812H4.91071ZM2.23214 9.875C0.998884 9.875 0 10.8889 0 12.1406V14.8594C0 16.1111 0.998884 17.125 2.23214 17.125H4.91071C6.14397 17.125 7.14286 16.1111 7.14286 14.8594V12.1406C7.14286 10.8889 6.14397 9.875 4.91071 9.875H2.23214ZM2.23214 19.8438H4.91071C5.6529 19.8438 6.25 20.4498 6.25 21.2031V23.9219C6.25 24.6752 5.6529 25.2812 4.91071 25.2812H2.23214C1.48996 25.2812 0.892857 24.6752 0.892857 23.9219V21.2031C0.892857 20.4498 1.48996 19.8438 2.23214 19.8438ZM0 21.2031V23.9219C0 25.1736 0.998884 26.1875 2.23214 26.1875H4.91071C6.14397 26.1875 7.14286 25.1736 7.14286 23.9219V21.2031C7.14286 19.9514 6.14397 18.9375 4.91071 18.9375H2.23214C0.998884 18.9375 0 19.9514 0 21.2031ZM13.8393 1.71875C14.5815 1.71875 15.1786 2.3248 15.1786 3.07812V5.79688C15.1786 6.5502 14.5815 7.15625 13.8393 7.15625H11.1607C10.4185 7.15625 9.82143 6.5502 9.82143 5.79688V3.07812C9.82143 2.3248 10.4185 1.71875 11.1607 1.71875H13.8393ZM11.1607 0.8125C9.92745 0.8125 8.92857 1.82637 8.92857 3.07812V5.79688C8.92857 7.04863 9.92745 8.0625 11.1607 8.0625H13.8393C15.0725 8.0625 16.0714 7.04863 16.0714 5.79688V3.07812C16.0714 1.82637 15.0725 0.8125 13.8393 0.8125H11.1607ZM11.1607 10.7812H13.8393C14.5815 10.7812 15.1786 11.3873 15.1786 12.1406V14.8594C15.1786 15.6127 14.5815 16.2188 13.8393 16.2188H11.1607C10.4185 16.2188 9.82143 15.6127 9.82143 14.8594V12.1406C9.82143 11.3873 10.4185 10.7812 11.1607 10.7812ZM8.92857 12.1406V14.8594C8.92857 16.1111 9.92745 17.125 11.1607 17.125H13.8393C15.0725 17.125 16.0714 16.1111 16.0714 14.8594V12.1406C16.0714 10.8889 15.0725 9.875 13.8393 9.875H11.1607C9.92745 9.875 8.92857 10.8889 8.92857 12.1406ZM13.8393 19.8438C14.5815 19.8438 15.1786 20.4498 15.1786 21.2031V23.9219C15.1786 24.6752 14.5815 25.2812 13.8393 25.2812H11.1607C10.4185 25.2812 9.82143 24.6752 9.82143 23.9219V21.2031C9.82143 20.4498 10.4185 19.8438 11.1607 19.8438H13.8393ZM11.1607 18.9375C9.92745 18.9375 8.92857 19.9514 8.92857 21.2031V23.9219C8.92857 25.1736 9.92745 26.1875 11.1607 26.1875H13.8393C15.0725 26.1875 16.0714 25.1736 16.0714 23.9219V21.2031C16.0714 19.9514 15.0725 18.9375 13.8393 18.9375H11.1607ZM20.0893 1.71875H22.7679C23.51 1.71875 24.1071 2.3248 24.1071 3.07812V5.79688C24.1071 6.5502 23.51 7.15625 22.7679 7.15625H20.0893C19.3471 7.15625 18.75 6.5502 18.75 5.79688V3.07812C18.75 2.3248 19.3471 1.71875 20.0893 1.71875ZM17.8571 3.07812V5.79688C17.8571 7.04863 18.856 8.0625 20.0893 8.0625H22.7679C24.0011 8.0625 25 7.04863 25 5.79688V3.07812C25 1.82637 24.0011 0.8125 22.7679 0.8125H20.0893C18.856 0.8125 17.8571 1.82637 17.8571 3.07812ZM22.7679 10.7812C23.51 10.7812 24.1071 11.3873 24.1071 12.1406V14.8594C24.1071 15.6127 23.51 16.2188 22.7679 16.2188H20.0893C19.3471 16.2188 18.75 15.6127 18.75 14.8594V12.1406C18.75 11.3873 19.3471 10.7812 20.0893 10.7812H22.7679ZM20.0893 9.875C18.856 9.875 17.8571 10.8889 17.8571 12.1406V14.8594C17.8571 16.1111 18.856 17.125 20.0893 17.125H22.7679C24.0011 17.125 25 16.1111 25 14.8594V12.1406C25 10.8889 24.0011 9.875 22.7679 9.875H20.0893ZM20.0893 19.8438H22.7679C23.51 19.8438 24.1071 20.4498 24.1071 21.2031V23.9219C24.1071 24.6752 23.51 25.2812 22.7679 25.2812H20.0893C19.3471 25.2812 18.75 24.6752 18.75 23.9219V21.2031C18.75 20.4498 19.3471 19.8438 20.0893 19.8438ZM17.8571 21.2031V23.9219C17.8571 25.1736 18.856 26.1875 20.0893 26.1875H22.7679C24.0011 26.1875 25 25.1736 25 23.9219V21.2031C25 19.9514 24.0011 18.9375 22.7679 18.9375H20.0893C18.856 18.9375 17.8571 19.9514 17.8571 21.2031Z" fill="#555454"/>
+                        </svg>
+                        
+                </a>
+                <a href="#"><svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.385 9.5543C11.2888 9.63301 11.1444 9.6875 11 9.6875C10.8556 9.6875 10.7112 9.63906 10.615 9.5543L2.35125 2.68223C2.255 2.60352 2.2 2.48848 2.2 2.36738C2.2 2.13125 2.42 1.9375 2.68812 1.9375H19.305C19.5731 1.9375 19.7931 2.13125 19.7931 2.36738C19.7931 2.48848 19.7381 2.59746 19.6419 2.68223L11.385 9.5543ZM12.8975 10.965L21.1544 4.09297C21.6906 3.64492 22 3.02129 22 2.37344C22 1.06562 20.7969 0.00605506 19.3119 0.00605506L2.68812 0C1.20312 0 0 1.05957 0 2.36738C0 3.02129 0.3025 3.64492 0.845625 4.08691L9.1025 10.965C9.61125 11.3889 10.2919 11.625 11 11.625C11.7081 11.625 12.3819 11.3889 12.8975 10.965Z" fill="#555454"/>
+                    </svg>
+                    </a>
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+ <!--#############> Menue End <########### -->
+
+   
+    <script>
+      var hostUrl = "assets/";
+    </script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="assets/js/custom/pages/user-profile/general.js"></script>
+    <script src="assets/js/widgets.bundle.js"></script>
+    <script src="assets/js/custom/widgets.js"></script>
+    <script src="assets/js/custom/apps/chat/chat.js"></script>
+    <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/type.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/details.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/finance.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/complete.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/main.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="assets/js/custom/utilities/modals/users-search.js"></script>
+    <script src="assets/plugins/custom/vis-timeline/vis-timeline.bundle.js"></script>
+    <!--end::Custom Javascript-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('.app-header');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+
+let btnse=document.getElementById('btnse')
+let sinp=document.getElementById("sinp")
+btnse.onclick=()=>{
+    sinp.classList.toggle('d-none')
+}
+    </script>
+
+
+<script>
+    
+
+ const menu = document.querySelector(".menu");
+ const menuMain = menu.querySelector(".menu-main");
+ const goBack = menu.querySelector(".go-back");
+ const menuTrigger = document.querySelector(".mobile-menu-trigger");
+ const closeMenu = menu.querySelector(".mobile-menu-close");
+ let subMenu;
+ menuMain.addEventListener("click", (e) =>{
+ 	if(!menu.classList.contains("active")){
+ 		return;
+ 	}
+   if(e.target.closest(".menu-item-has-children")){
+   	 const hasChildren = e.target.closest(".menu-item-has-children");
+      showSubMenu(hasChildren);
+   }
+ });
+ goBack.addEventListener("click",() =>{
+ 	 hideSubMenu();
+ })
+ menuTrigger.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ closeMenu.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ document.querySelector(".menu-overlay").addEventListener("click",() =>{
+ 	toggleMenu();
+ })
+ function toggleMenu(){
+ 	menu.classList.toggle("active");
+ 	document.querySelector(".menu-overlay").classList.toggle("active");
+ }
+ function showSubMenu(hasChildren){
+    subMenu = hasChildren.querySelector(".sub-menu");
+    subMenu.classList.add("active");
+    subMenu.style.animation = "slideLeft 0.5s ease forwards";
+    const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+    menu.querySelector(".current-menu-title").innerHTML=menuTitle;
+    menu.querySelector(".mobile-menu-head").classList.add("active");
+ }
+
+ function  hideSubMenu(){  
+    subMenu.style.animation = "slideRight 0.5s ease forwards";
+    setTimeout(() =>{
+       subMenu.classList.remove("active");	
+    },300); 
+    menu.querySelector(".current-menu-title").innerHTML="";
+    menu.querySelector(".mobile-menu-head").classList.remove("active");
+ }
+ 
+ window.onresize = function(){
+ 	if(this.innerWidth >991){
+ 		if(menu.classList.contains("active")){
+ 			toggleMenu();
+ 		}
+
+ 	}
+ }
+
+
+</script>
+    
+    <!--end::Javascript-->
+  </body>
+  <!--end::Body-->
+</html>
